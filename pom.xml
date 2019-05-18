@@ -32,6 +32,18 @@
 		</dependency>
 
 	</dependencies>
+	<distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>jenkins-snapshot</name>
+        <url>http://localhost:8089/yedhapas/repository/Flipcart-Snapshot/</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>jenkins release</name>
+        <url>http://localhost:8089/yedhapas/repository/Flipcart-Release/</url>
+    </snapshotRepository>
+</distributionManagement>
 
 	<!-- Committing and updating changes through Maven, by using below mvn command. 
 		For Commiting mvn -Dmessage="Updated using maven" scm:checkin For updating 
